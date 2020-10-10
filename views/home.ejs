@@ -7,8 +7,8 @@
 
 
 <% composePost.forEach((element) => { %>
-<h1> <%= element.keyTitle %> </h1>
-<p> <%= element.keyContent %> </p>
+<h1> <%= element.keyTitle.substring(0, 50) %> </h1>
+<p> <%= element.keyContent.substring(0, 100) + "..." %> </p>
 <% }); %>
 
 <!-- ########################### -->
