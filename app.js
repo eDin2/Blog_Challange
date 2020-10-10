@@ -109,7 +109,7 @@ app.post("/compose", (req, res) => {
   // POST Anfrage(req) an den body, durchsuchen nach dem Wert der als postTitle und postContent bezeichnet wird
 
   const POST = {
-    keyTitle: titleEntry,
+    keyTitle: titleEntry, // => keyTitle ist der titleEntry welcher mittels req.body.postTitle abgefangen wurde
     keyContent: contentEntry
   };
   // mit der const POST (ist ein Objekt) werden die abgefangenen einträge als ky generiert
