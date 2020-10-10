@@ -1,0 +1,15 @@
+<%- include('partials/header.ejs'); -%>
+<!-- ########################### -->
+
+<h1>Home</h1>
+
+<p> <%= startingHomeContent %> </p>
+
+
+<% composePost.forEach((element) => { %>
+<h1> <%= element.keyTitle %> </h1>
+<p> <%= element.keyContent %> </p>
+<% }); %>
+
+<!-- ########################### -->
+<%- include('partials/footer.ejs'); -%>
