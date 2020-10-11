@@ -8,7 +8,7 @@
 
 <% composePost.forEach((element) => { %>
 <h1> <%= element.keyTitle.substring(0, 50) %> </h1>
-<p> <%= element.keyContent.substring(0, 100) + "..." %> </p>
+<p> <%= element.keyContent.substring(0, 100) + " ..." %> <a href="/posts/ <%= element.keyTitle %> ">Read More!</a> </p>
 <% }); %>
 
 <!-- ########################### -->
